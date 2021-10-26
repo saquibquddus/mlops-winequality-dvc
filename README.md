@@ -26,3 +26,28 @@ git add .
 
 git commit -m "first commit"
 
+## tox command -
+```bash
+tox
+```
+
+## for reebuilding -
+```bash
+tox -r
+```
+## pytest command -
+```bash
+pytest -v
+```
+
+## setup commands -
+```bash
+pip install -e .
+```
+
+## build your packages command -
+```bash
+python setup.py sdist bdist_wheel
+```
+
+
