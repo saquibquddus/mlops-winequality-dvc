@@ -19,10 +19,12 @@ def index():
         try:
             if request.form:
                 data_req = dict(request.form)
+                print(data_req)
                 response = prediction.form_response(data_req)
                 return render_template("index.html", response=response)
 
             elif request.json:
+                print(request.json)
                 response = prediction.api_response(request.json)
                 return jsonify(response)
 
